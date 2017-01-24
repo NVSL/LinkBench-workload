@@ -22,4 +22,4 @@ To setup LinkBench to run with MySQL database, run this command line:
 ~~~
 ./databasesetup.sh
 ~~~
-NOTE: linkdb.sql must be at the same dicrectory as this script.
+NOTE: linkdb.sql must be on the same dicrectory as this script.
