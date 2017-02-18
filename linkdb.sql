@@ -1,6 +1,8 @@
 CREATE DATABASE linkdb;
 CREATE USER 'linkbench'@'localhost' IDENTIFIED BY 'linkbench';
 
+SET global max_connections = 250;
+
 USE linkdb;
 
 GRANT ALL ON linkdb.* TO 'linkbench'@'localhost';
