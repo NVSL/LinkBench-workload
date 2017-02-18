@@ -17,19 +17,7 @@ echo "--------------------------------------------------------------------------
 Do you want to install Apache-Maven ? [Y/n] "
 read answer
 if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
-	echo "-------------------------------------------------------------------------------
-Downloading maven to $MY_PATH
-Do you want to change the directory? [Y/n] "
-	read answer
-	if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
-		echo "Type the path to the directory you want to download maven to: "
-		read path
-	else
-		path=$MY_PATH
-	fi
-	wget -P $path http://mirrors.gigenet.com/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip
-	unzip $path/apache-maven-3.3.9-bin.zip -d $path/apache-maven-3.3.9-bin
-	export PATH=$path/apache-maven-3.3.9-bin/bin:$PATH
+	sudo apt-get install maven
 fi
 
 echo "-------------------------------------------------------------------------------
