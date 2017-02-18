@@ -34,4 +34,11 @@ echo "--------------------------------------------------------------------------
 
 ./bin/linkbench -c config/MyConfig.properties -l
 
+
+echo "------------------------------------------------------------------------------
+				Request Phase
+------------------------------------------------------------------------------"
+
+./bin/linkbench -c config/MyConfig.properties -csvstats final-stats.csv -csvstream streaming-stats.csv -r
+
 cd $MY_PATH
