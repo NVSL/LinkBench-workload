@@ -32,13 +32,13 @@ echo "--------------------------------------------------------------------------
 				Loading Data
 ------------------------------------------------------------------------------"
 
-./bin/linkbench -c config/MyConfig.properties -l
+./bin/linkbench -c config/MyConfig.properties -csvstats load-phase-final-stats.csv -csvstream load-phase-streaming-stats.csv -L load-phase.log -l
 
 
 echo "------------------------------------------------------------------------------
 				Request Phase
 ------------------------------------------------------------------------------"
 
-./bin/linkbench -c config/MyConfig.properties -csvstats final-stats.csv -csvstream streaming-stats.csv -r
+./bin/linkbench -c config/MyConfig.properties -csvstats request-phase-final-stats.csv -csvstream request-phase-streaming-stats.csv -L request-phase.log -r
 
 cd $MY_PATH
