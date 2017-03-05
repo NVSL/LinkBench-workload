@@ -21,6 +21,13 @@ if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
 fi
 
 echo "-------------------------------------------------------------------------------
+Do you want to install unzip ? [Y/n] "
+read answer
+if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
+	sudo apt-get install unzip
+fi
+
+echo "-------------------------------------------------------------------------------
 Do you want to install Connector-J? [Y/n] "
 read answer
 if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
