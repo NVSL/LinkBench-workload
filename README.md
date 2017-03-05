@@ -16,10 +16,26 @@ To get the source code and build LinkBench, run this command line:
 . ./linkbench.sh
 ~~~
 
-## Running a Benchmark with MySQL
+##  MySQL setup
 
 To setup LinkBench to run with MySQL database, run this command line:
 ~~~
-./databasesetup.sh
+. ./databasesetup.sh
 ~~~
 NOTE: linkdb.sql must be on the same dicrectory as this script.
+
+## Running a Benchmark
+
+# Loading Data
+
+To do an initial load of data use the command line:
+~~~
+. ./loadphase.sh
+~~~
+
+# Request phase
+
+Run the request phase using the below command:
+~~~
+. ./requestphase.sh
+~~~
