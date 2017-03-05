@@ -26,14 +26,14 @@ NOTE: linkdb.sql must be on the same dicrectory as this script.
 
 ## Running a Benchmark
 
-# Loading Data
+### Loading Data
 
 To do an initial load of data use the command line:
 ~~~
 . ./loadphase.sh
 ~~~
 
-# Request phase
+### Request phase
 
 Run the request phase using the below command:
 ~~~
