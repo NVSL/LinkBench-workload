@@ -28,17 +28,4 @@ cd $path
 
 cat config/LinkConfigMysql.properties | sed 's/yourhostname.here/localhost/' | sed 's/MySQLuser/linkbench/' | sed 's/MySQLpass/linkbench/' > config/MyConfig.properties
 
-echo "------------------------------------------------------------------------------
-				Loading Data
-------------------------------------------------------------------------------"
-
-./bin/linkbench -c config/MyConfig.properties -csvstats load-phase-final-stats.csv -csvstream load-phase-streaming-stats.csv -L load-phase.log -l
-
-
-echo "------------------------------------------------------------------------------
-				Request Phase
-------------------------------------------------------------------------------"
-
-./bin/linkbench -c config/MyConfig.properties -csvstats request-phase-final-stats.csv -csvstream request-phase-streaming-stats.csv -L request-phase.log -r
-
 cd $MY_PATH
