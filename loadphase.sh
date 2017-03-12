@@ -5,6 +5,7 @@ MY_PATH="`( cd \"$MY_PATH\" && pwd )`"
 echo "------------------------------------------------------------------------------
 				Loading Data
 ------------------------------------------------------------------------------
+Current directory: $MY_PATH
 
 Is linkbench-master folder on the current directory? [Y/n] "
 read answer
