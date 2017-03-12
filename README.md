@@ -20,22 +20,21 @@ bash linkbench.sh
 
 To setup LinkBench to run with MySQL database, run this command line:
 ~~~
-bash databasesetup.sh
+mysql -u root -p < linkdb.sql
 ~~~
-NOTE: linkdb.sql must be on the same dicrectory as this script.
 
 ## Running a Benchmark
 
 ### Loading Data
 
-To do an initial load of data, inside of LinkBench directory, use the command line:
+To do an initial load of data use the command line:
 ~~~
 bash loadphase.sh
 ~~~
 
 ### Request phase
 
-Run the request phase, inside of LinkBench directory, using the below command:
+Run the request phase using the below command:
 ~~~
 bash requestphase.sh
 ~~~
