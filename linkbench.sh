@@ -1,5 +1,7 @@
 #!/bin/bash
+
 MY_PATH="`( cd \"$MY_PATH\" && pwd )`"
+
 echo "Downloading LinkBench to $MY_PATH
 Do you want to change the directory? [Y/n] "
 read answer
@@ -9,6 +11,7 @@ if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
 else
 	path=$MY_PATH
 fi
+
 wget -P $path wget https://github.com/facebookarchive/linkbench/archive/master.zip
 unzip $path/master.zip -d $path
 
@@ -28,5 +31,11 @@ elif [ "$answer" == "2" ]; then
 else
 	mvn clean package
 fi
+
+echo "------------------------------------------------------------------------------
+				Configuration Files
+------------------------------------------------------------------------------"
+
+cat config/LinkConfigMysql.properties | sed 's/yourhostname.here/localhost/' | sed 's/MySQLuser/linkbench/' | sed 's/MySQLpass/linkbench/' > config/MyConfig.properties
 
 cd $MY_PATH
