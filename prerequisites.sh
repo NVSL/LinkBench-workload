@@ -1,5 +1,7 @@
 #!/bin/bash
+
 MY_PATH="`( cd \"$MY_PATH\" && pwd )`"
+
 echo "Do you want to install Java? [Y/n] "
 read answer
 if [ "$answer" == "Y" ] || [ "$answer" == "y" ]; then
