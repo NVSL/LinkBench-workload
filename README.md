@@ -6,21 +6,21 @@ These instructions assume you are using a UNIX-like system such as a Linux distr
 
 LinkBench requires some necessary softwares. To obtain them, run this command line:
 ~~~
-. ./prerequisites.sh
+bash prerequisites.sh
 ~~~
 
 ## Getting and Building LinkBench
 
 To get the source code and build LinkBench, run this command line:
 ~~~
-. ./linkbench.sh
+bash linkbench.sh
 ~~~
 
 ##  MySQL setup
 
 To setup LinkBench to run with MySQL database, run this command line:
 ~~~
-. ./databasesetup.sh
+bash databasesetup.sh
 ~~~
 NOTE: linkdb.sql must be on the same dicrectory as this script.
 
@@ -28,14 +28,14 @@ NOTE: linkdb.sql must be on the same dicrectory as this script.
 
 ### Loading Data
 
-To do an initial load of data use the command line:
+To do an initial load of data, inside of LinkBench directory, use the command line:
 ~~~
-. ./loadphase.sh
+bash loadphase.sh
 ~~~
 
 ### Request phase
 
-Run the request phase using the below command:
+Run the request phase, inside of LinkBench directory, using the below command:
 ~~~
-. ./requestphase.sh
+bash requestphase.sh
 ~~~
