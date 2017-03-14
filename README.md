@@ -1,4 +1,4 @@
-# LinkBench-workload
+# LinkBench Workload
 
 These instructions assume you are using a UNIX-like system such as a Linux distribution or Mac OS X.
 
