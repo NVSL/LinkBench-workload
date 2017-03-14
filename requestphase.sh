@@ -18,7 +18,17 @@ else
 fi
 
 cd $path
+# parameters
 
-./bin/linkbench -c config/MyConfig.properties -csvstats request-phase-final-stats.csv -csvstream request-phase-streaming-stats.csv -L request-phase.log -r
+# -csvstats request-phase-final-stats.csv 
+	#provide a csv file with final stats
+# -csvstream request-phase-streaming-stats.csv
+	#provide a csv file with streaming stats
+# -L request-phase.log 
+	#output is sent to a file log
+# -D debuglevel=DEBUG
+	#more detailed logging
+	
+./bin/linkbench -c config/MyConfig.properties -csvstats request-phase-final-stats.csv -csvstream request-phase-streaming-stats.csv -r
 
 cd $MY_PATH
